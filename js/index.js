@@ -2,7 +2,9 @@ let inptName =document.querySelector(".inptName");
 let inputCaption =document.querySelector('.inputCaption');
 let postBtn =document.querySelector('.postBtn');
 
-console.log(inptName);
-console.log(inputCaption);
-console.log(postBtn)
+
+postBtn.addEventListener("click",function(){
+    console.log(inptName.value);
+    console.log(inputCaption.value);
+})
 
