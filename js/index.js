@@ -1,3 +1,8 @@
-let inptName =document.getElementsByName('.inptName');
-let inputCaption =document.getElementsByName('.inputCaption');
-let postBtn =document.getElementsByName('.postBtn');
+let inptName =document.querySelector(".inptName");
+let inputCaption =document.querySelector('.inputCaption');
+let postBtn =document.querySelector('.postBtn');
+
+console.log(inptName);
+console.log(inputCaption);
+console.log(postBtn)
+
