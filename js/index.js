@@ -1,6 +1,7 @@
 let inptName =document.querySelector(".inptName");
 let inputCaption =document.querySelector('.inputCaption');
 let postBtn =document.querySelector('.postBtn');
+let updateBtn =document.querySelector('.updateBtn');
 let allPost =document.querySelector(".allPost")
 let arr=[]
 postBtn.addEventListener("click",function(){
@@ -46,6 +47,7 @@ function Display(){
                inptName.value =arr[index].name
                inputCaption.value=arr[index].caption
                })
+
               })
               // edit btn 
               
