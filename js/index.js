@@ -46,6 +46,8 @@ function Display(){
                item.addEventListener('click' , function(){
                inptName.value =arr[index].name
                inputCaption.value=arr[index].caption
+               updateBtn.style.display ="inline-block"
+               postBtn.style.display="none"
                })
 
               })
