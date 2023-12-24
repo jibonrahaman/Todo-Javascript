@@ -43,7 +43,8 @@ function Display(){
               const editArr=Array.from(editBtn);
               editArr.map((item,index)=>{
                item.addEventListener('click' , function(){
-             console.log(index);
+               inptName.value =arr[index].name
+               inputCaption.value=arr[index].caption
                })
               })
               // edit btn 
