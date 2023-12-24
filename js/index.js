@@ -11,6 +11,8 @@ postBtn.addEventListener("click",function(){
    })
    Display()
 })
+
+
 function Display(){
     arr.map((item)=>{
         allPost.innerHTML += `<div class="card" style="width: 18rem; margin-top: 30px;">
@@ -18,9 +20,13 @@ function Display(){
           <h5 class="card-title">${item.name}</h5>
           <p class="card-text">${item.caption}</p>
           <button type="button" class="btn btn-primary">Edit</button>
-          <button type="button" class="btn btn-danger">Delet</button>
+          <button type="button" class="btn btn-danger Delete">Delete</button>
         </div>
       </div>`
+      const itemDelete =document.querySelectorAll('.Delete');
+      const arr=new Array.from(itemDelete)
+      console.log(arr);
+
     })
 }
 
