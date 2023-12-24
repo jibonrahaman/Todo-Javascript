@@ -4,6 +4,7 @@ let postBtn =document.querySelector('.postBtn');
 let updateBtn =document.querySelector('.updateBtn');
 let allPost =document.querySelector(".allPost")
 let arr=[]
+let updateIndex;
 postBtn.addEventListener("click",function(){
     allPost.innerHTML=""
    arr.push({
@@ -13,7 +14,9 @@ postBtn.addEventListener("click",function(){
    Display()
 })
 
-
+updateBtn.addEventListener('click', ()=>{
+console.log(arr.updateIndex);
+})
 function Display(){
     arr.map((item)=>{
         allPost.innerHTML += `<div class="card" style="width: 18rem; margin-top: 30px;">
@@ -44,6 +47,7 @@ function Display(){
               const editArr=Array.from(editBtn);
               editArr.map((item,index)=>{
                item.addEventListener('click' , function(){
+                updateIndex=index
                inptName.value =arr[index].name
                inputCaption.value=arr[index].caption
                updateBtn.style.display ="inline-block"
