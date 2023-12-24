@@ -39,7 +39,8 @@ function Display(){
               // dlt btn start
               
               // edit btn 
-              
+              const editBtn =document.querySelectorAll('.editBtn');
+              const editArr=Array.from(editBtn);
               // edit btn 
               
  
