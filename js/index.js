@@ -30,7 +30,7 @@ function Display(){
       const dltArr=Array.from(dltBtn);
       dltArr.map((item,index)=>{
         item.addEventListener('click',function(){
-        console.log(item);
+        console.log(index);
        })
       })
      
