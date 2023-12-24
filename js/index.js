@@ -19,7 +19,7 @@ function Display(){
         <div class="card-body">
           <h5 class="card-title">${item.name}</h5>
           <p class="card-text">${item.caption}</p>
-          <button type="button" class="btn btn-primary">Edit</button>
+          <button type="button" class="btn btn-primary editBtn">Edit</button>
           <button type="button" class="btn btn-danger dltBtn">Delete</button>
         </div>
       </div>`         
@@ -37,6 +37,10 @@ function Display(){
                 })
               })
               // dlt btn start
+              
+              // edit btn 
+              
+              // edit btn 
               
  
 }
