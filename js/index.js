@@ -20,15 +20,20 @@ function Display(){
           <h5 class="card-title">${item.name}</h5>
           <p class="card-text">${item.caption}</p>
           <button type="button" class="btn btn-primary">Edit</button>
-          <button type="button" class="btn btn-danger itemDelete">Delete</button>
+          <button type="button" class="btn btn-danger dltBtn">Delete</button>
         </div>
       </div>`         
     })
-    const itemDelete=document.querySelectorAll('.itemDelete');
+    const dltBtn=document.querySelectorAll('.dltBtn');
     
    
-      const deleteArr=Array.from(itemDelete);
-      console.log(deleteArr);
+      const dltArr=Array.from(dltBtn);
+      dltArr.map((item,index)=>{
+        item.addEventListener('click',function(){
+        console.log(item);
+       })
+      })
+     
  
 }
 
