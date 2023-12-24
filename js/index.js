@@ -42,8 +42,9 @@ function Display(){
               const editBtn =document.querySelectorAll('.editBtn');
               const editArr=Array.from(editBtn);
               editArr.map((item,index)=>{
-                console.log(item);
-                console.log(index);
+               item.addEventListener('click' , function(){
+             console.log(index);
+               })
               })
               // edit btn 
               
