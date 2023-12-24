@@ -15,7 +15,13 @@ postBtn.addEventListener("click",function(){
 })
 
 updateBtn.addEventListener('click', ()=>{
-console.log(arr.updateIndex);
+console.log(arr[updateIndex]);
+arr[updateIndex]={
+ name:inptName.value,
+ caption:inputCaption.value
+}
+updateBtn.style.display="none"
+postBtn.style.display="inline-block"
 })
 function Display(){
     arr.map((item)=>{
