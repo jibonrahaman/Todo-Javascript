@@ -23,17 +23,19 @@ function Display(){
           <button type="button" class="btn btn-danger dltBtn">Delete</button>
         </div>
       </div>`         
-    })
-    const dltBtn=document.querySelectorAll('.dltBtn');
-    
-   
-      const dltArr=Array.from(dltBtn);
-      dltArr.map((item,index)=>{
-        item.addEventListener('click',function(){
-        console.log(index);
-       })
-      })
-     
+    }) 
+
+              // dlt btn start
+              const dltBtn=document.querySelectorAll('.dltBtn');
+              const dltArr=Array.from(dltBtn);
+              dltArr.map((item,index)=>{
+                item.addEventListener('click',function(){
+                  arr.slice(index,1)
+                  Display()
+                })
+              })
+              // dlt btn start
+              
  
 }
 
