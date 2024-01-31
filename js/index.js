@@ -4,14 +4,11 @@ let postBtn =document.querySelector('.postBtn');
 let updateBtn =document.querySelector('.updateBtn');
 let allPost =document.querySelector(".allPost")
 
-  let arr = [
- {
-  name:"shahwo"
- },
- {
-  des:"des"
- }
-  ]
+  let arr = []
+
+  postBtn.addEventListener ("click", function(){
+    console.log("dd");
+  })
 
   arr.map((item)=>{
     allPost.innerHTML = `<div class="card" style="width: 18rem; margin-top: 30px;">
