@@ -5,6 +5,7 @@ let updateBtn =document.querySelector('.updateBtn');
 let allPost =document.querySelector(".allPost")
 
   let arr = []
+  let updateIndex;
 
   postBtn.addEventListener ("click", function(){
     allPost.innerHTML = ""
@@ -45,15 +46,30 @@ let allPost =document.querySelector(".allPost")
       let editArr =Array.from(editBtn)
       editArr.map((item,index)=>{
         item.addEventListener("click", function (){
+          updateIndex =index
           inptName.value =arr[index].name
           inputCaption.value = arr[index].caption
+          updateBtn.style.display ="inline-block"
+          postBtn.style.display ="none"
         })
       })
-  
+}
 
 
- }
 
+updateBtn.addEventListener("click", function(){
+  allPost.innerHTML = " "
+  arr[updateIndex]={
+    name:inptName.value,
+    caption:inputCaption.value
+  }
+
+  updateBtn.style.display="none"
+  postBtn.style.display ="inline-block"
+ display()
+ inptName.value = " "
+ inputCaption.value = " "
+})
 
 
 
