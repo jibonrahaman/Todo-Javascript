@@ -27,8 +27,11 @@ let allPost =document.querySelector(".allPost")
            <button type="button" class="btn btn-danger dltBtn">Delete</button>
            </div>
        </div>`
-     
-  })
+ })
+
+  let dltBtn =document.querySelectorAll('.dltBtn')
+  
+
  }
 
 
