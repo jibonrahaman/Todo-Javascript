@@ -28,7 +28,7 @@ let allPost =document.querySelector(".allPost")
            </div>
        </div>`
  })
-
+            // dlt 
   let dltBtn =document.querySelectorAll('.dltBtn');
   let dltArr =Array.from(dltBtn)
   dltArr.map((item,index)=>{
@@ -38,6 +38,17 @@ let allPost =document.querySelector(".allPost")
    display()
     })
   })
+
+      // edit 
+
+      let editBtn = document.querySelectorAll('.editBtn');
+      let editArr =Array.from(editBtn)
+      editArr.map((item,index)=>{
+        item.addEventListener("click", function (){
+          inptName.value =arr[index].name
+          inputCaption.value = arr[index].caption
+        })
+      })
   
 
 
