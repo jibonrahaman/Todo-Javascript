@@ -7,8 +7,11 @@ let allPost =document.querySelector(".allPost")
   let arr = []
 
   postBtn.addEventListener ("click", function(){
-   console.log(inptName.value);
-   console.log(inputCaption.value);
+ arr.push({
+ name:inptName.value,
+ caption:inputCaption.value
+ })
+ console.log(arr);
   })
 
  function display (){
