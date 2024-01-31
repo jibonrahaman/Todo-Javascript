@@ -16,7 +16,7 @@ let allPost =document.querySelector(".allPost")
 
  function display (){
   arr.map((item)=>{
-    allPost.innerHTML = `<div class="card" style="width: 18rem; margin-top: 30px;">
+    allPost.innerHTML += `<div class="card" style="width: 18rem; margin-top: 30px;">
            <div class="card-body">
            <h5 class="card-title">${item.name}</h5>
            <p class="card-text">${item.caption}</p>
