@@ -14,7 +14,14 @@ let allPost =document.querySelector(".allPost")
   ]
 
   arr.map((item)=>{
-    console.log(item);
+    allPost.innerHTML = `<div class="card" style="width: 18rem; margin-top: 30px;">
+           <div class="card-body">
+           <h5 class="card-title">vv</h5>
+           <p class="card-text">cc</p>
+           <button type="button" class="btn btn-primary editBtn">Edit</button>
+           <button type="button" class="btn btn-danger dltBtn">Delete</button>
+           </div>
+       </div>`
   })
 
 
