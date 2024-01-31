@@ -7,9 +7,10 @@ let allPost =document.querySelector(".allPost")
   let arr = []
 
   postBtn.addEventListener ("click", function(){
-    console.log("dd");
+  
   })
 
+ function display (){
   arr.map((item)=>{
     allPost.innerHTML = `<div class="card" style="width: 18rem; margin-top: 30px;">
            <div class="card-body">
@@ -20,6 +21,7 @@ let allPost =document.querySelector(".allPost")
            </div>
        </div>`
   })
+ }
 
 
 
