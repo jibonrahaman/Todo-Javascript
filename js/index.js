@@ -11,21 +11,23 @@ let allPost =document.querySelector(".allPost")
  name:inptName.value,
  caption:inputCaption.value
  })
- console.log(arr);
+ display ()
   })
 
  function display (){
   arr.map((item)=>{
     allPost.innerHTML = `<div class="card" style="width: 18rem; margin-top: 30px;">
            <div class="card-body">
-           <h5 class="card-title">vv</h5>
-           <p class="card-text">cc</p>
+           <h5 class="card-title">${item.name}</h5>
+           <p class="card-text">${item.caption}</p>
            <button type="button" class="btn btn-primary editBtn">Edit</button>
            <button type="button" class="btn btn-danger dltBtn">Delete</button>
            </div>
        </div>`
+     
   })
  }
+
 
 
 
