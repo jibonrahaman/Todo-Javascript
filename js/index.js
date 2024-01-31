@@ -31,9 +31,11 @@ let allPost =document.querySelector(".allPost")
 
   let dltBtn =document.querySelectorAll('.dltBtn');
   let dltArr =Array.from(dltBtn)
-  dltArr.map((item)=>{
+  dltArr.map((item,index)=>{
     item.addEventListener ("click", function(){
-      console.log("ok");
+      allPost.innerHTML = ""
+   arr.splice(index,1)
+   display()
     })
   })
   
