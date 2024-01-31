@@ -29,8 +29,15 @@ let allPost =document.querySelector(".allPost")
        </div>`
  })
 
-  let dltBtn =document.querySelectorAll('.dltBtn')
+  let dltBtn =document.querySelectorAll('.dltBtn');
+  let dltArr =Array.from(dltBtn)
+  dltArr.map((item)=>{
+    item.addEventListener ("click", function(){
+      console.log("ok");
+    })
+  })
   
+
 
  }
 
